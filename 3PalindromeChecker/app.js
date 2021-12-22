@@ -4,16 +4,18 @@ const checkBtn = document.querySelector(".checkBtn");
 const result = document.querySelector(".result");
 
 checkBtn.addEventListener("click", () => {
-  if (input.value) {
-    let answer = isPalindrome(input.value);
+  let value = input.value;
+  if (value) {
+    let answer = isPalindrome(value);
     if (answer === true) {
-      result.textContent = "Your text is indeed a palindrome!";
+      result.textContent = ` ${value.toUpperCase()} is indeed a palindrome!`;
       body.style.backgroundColor = "green";
     } else {
-      result.textContent = "This is not a palindrome!";
+      result.textContent = `${value.toUpperCase()} is not a palindrome!`;
       body.style.backgroundColor = "red";
     }
   } else {
     result.textContent = "Please put a value into the input field";
   }
+  input.value = "";
 });
