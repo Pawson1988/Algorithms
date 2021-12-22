@@ -16,6 +16,7 @@ checkBtn.addEventListener("click", () => {
     }
   } else {
     result.textContent = "Please put a value into the input field";
+    body.style.backgroundColor = "aquamarine";
   }
   input.value = "";
 });
