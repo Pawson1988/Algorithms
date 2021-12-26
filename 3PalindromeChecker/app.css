@@ -4,7 +4,23 @@
 }
 
 body {
-    background-color: aquamarine;
+    background: linear-gradient(210deg, rgb(90, 192, 90), darkgreen);
+}
+
+.defaultBackground {
+    background: linear-gradient(210deg, rgb(90, 192, 90), darkgreen);
+}
+
+.isPalindrome {
+    background: linear-gradient(210deg, rgb(103, 118, 204), rgb(18, 31, 201));
+}
+
+.isNotPalindrome {
+    background: linear-gradient(210deg, rgb(189, 116, 103), rgb(211, 32, 32));
+}
+
+h1 {
+    text-transform: uppercase;
 }
 
 .container {
@@ -16,7 +32,7 @@ body {
 }
 
 .centre-container {
-    background-color: darkgreen;
+    background: linear-gradient(30deg, rgb(90, 192, 90), darkgreen);
     display: flex;
     align-items: center;
     flex-direction: column; 
@@ -33,7 +49,7 @@ body {
     font-size: 1.5rem;
     border: none;
     border-bottom: red 2px solid;
-    background-color: darkgreen;
+    background-color: rgba(0, 128, 0, 0);
     color:rgb(172, 196, 228);
 }
 
